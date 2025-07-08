@@ -9,3 +9,4 @@ class Command(BaseCommand):
         user, is_created = User.objects.get_or_create(username="testuser", email="foobar@foo.bar")
         if is_created:
             user.set_password("foobar123;")
+            user.save()
