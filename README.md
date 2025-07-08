@@ -31,7 +31,7 @@ Please use bash to run the following script
 ./setup.sh
 ```
 
-This will migrate and populate database on step 1 API, run it on port 8000 and run step 2 API on port 8001 on local.
+This will migrate and populate database on step 1 API, create a test user and run it on port 8000 and run step 2 API on port 8001 on local.
 If not working , please inspect setup.sh in each project and run commands for each API on different terminals.
 
 ## Step 3

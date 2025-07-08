@@ -6,6 +6,7 @@ class Command(BaseCommand):
     help = "Run this command to initialize pokemon types"
 
     def handle(self, *args, **kwargs):
+        self.stdout.write("Initializing pokemon types")
         types = []
         types_url = "https://pokeapi.co/api/v2/type"
         while types_url:
