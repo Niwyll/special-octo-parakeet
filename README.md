@@ -43,7 +43,7 @@ This will:
 
 * Migrate and populate the database on the Step 1 API,
 * Create a test user,
-* Run Step 1 API on port **8000**,
+* Run Step 1 API on port **8000** locally,
 * Run Step 2 API on port **8001** locally.
 
 If this doesn’t work, please inspect the `setup.sh` script in each project folder and run the commands for each API in separate terminals.
@@ -64,6 +64,8 @@ If you ran `setup.sh` correctly, you should have a test user with the following 
 
 # Development Notes
 
+Names for apps and project could be inconsistant due to a missunderstanding of specifications until step 2.
+
 ## Step 1
 
 * Pokemon types are stored in the database to avoid redundant API calls while managing groups.
@@ -80,5 +82,5 @@ If you ran `setup.sh` correctly, you should have a test user with the following 
 * Therefore, I chose a **permissive approach**:
 
   * If a user belongs to the Fire group, they will see all Pokemon having Fire as **at least one** of their types.
-  * This avoids duplicate Pokemon in results when a user belongs to multiple groups.
+  * Avoid duplicate Pokemon in results when a user belongs to multiple groups.
   * This approach simplifies the implementation and still respects the exercise requirements.
